@@ -1,7 +1,7 @@
 # 619
 619 project syntax
 ```r
-   // code for coloring
+   // r for red
 ```
 ```html
    // code for coloring
@@ -12,4 +12,4 @@
 ```css
    // code for coloring
 ```
-// etc.
+
