@@ -1,5 +1,4 @@
-```r
-//
+```{r}
 #Final model for 619 project 
 
 load("H:\\BSF Processing Data\\Datasets\\Dataset for R\\Data Processing\\semdataCtl\\Everything4.RData")
@@ -61,17 +60,28 @@ CO3_D.W2 ~~ CO3_D.W3
 CO3_E.W2 ~~ CO3_E.W3 
 
 ##Suggestions from modification indices 
-CO3_
+CO3_C.W2 ~~ CO3_D.W2
+CO3_C.W3 ~~ CO3_D.W3
+PlayW2.d ~~ CareW2.d 
 
+CopW2.d ~~ CopW3.d
+CopW2.m ~~ CopW3.m
+
+###Structural model (controls upfront) 
+CopW2 ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + EduOther + MPF + IPVW2.d2 + IPVW2.m2 
+CareW2.d ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + EduOther + MPF + IPVW2.d2 + IPVW2.m2 
+PlayW2.d ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + EduOther + MPF + IPVW2.d2 + IPVW2.m2 
+
+CopW3 ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + EduOther + MPF + IPVW2.d2 + IPVW2.m2 + CopW2
+CareW3.d ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + EduOther + MPF + IPVW2.d2 + IPVW2.m2 + CareW2.d + CopW2
+PlayW3.d ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + EduOther + MPF + IPVW2.d2 + IPVW2.m2 + PlayW2.d + CopW2
+'
+
+Model3Fit_2<-sem(Model3_2, data=semdataCtl5.IPV4, estimator="MLR", missing="fiml")
+summary(MOdel3Fit_2, fit.measure=T, standardized=T, rsquare=T)
+anova(Model1Fit_2, Model3Fit_2)
+#residuals(Model1Fit, type='cor')
+
+mod_ind<-modificationindices(Model3Fit_2)
+head(mod_ind[order(mod_ind$mi, decreasing = TRUE),],15) 
 ```
-
-
-
-
-
-
-
-
-
-
-
