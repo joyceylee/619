@@ -8,4 +8,8 @@ engagement unidirectional model; (3) the coparenting unidirectional model; and (
 models with the Satorra-Bentler LR test and AIC. Results demonstrated a preference for the third model. Thus, the coparenting 
 unidirectional model was chosen as the final model. 
 
+I did not include output in my syntax because the actual analyses were conducted in ICPSR's Virtual Data Enclave (VDE), where the restricted data is currently stored. The VDE does not allow users to manually add or extract content outside of its 
+environment. My syntax here were re-typed by hand. The output is quite extensive so I could not include them here. For those 
+interested in looking at output, please refer to the lavaan project (http://lavaan.ugent.be/). 
+
 
