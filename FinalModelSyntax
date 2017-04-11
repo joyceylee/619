@@ -1,6 +1,6 @@
-```javascript
-
-//#Final model for 619 project 
+```r
+//
+#Final model for 619 project 
 
 load("H:\\BSF Processing Data\\Datasets\\Dataset for R\\Data Processing\\semdataCtl\\Everything4.RData")
 
