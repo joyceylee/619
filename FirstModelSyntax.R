@@ -1,5 +1,5 @@
 ```{r}
-#Final model for 619 project 
+#First model (stability model) for 619 project 
 
 load("H:\\BSF Processing Data\\Datasets\\Dataset for R\\Data Processing\\semdataCtl\\Everything4.RData")
 
@@ -77,6 +77,6 @@ PlayW3.d ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + Edu
 '
 
 Model1Fit_2<-sem(Model1_2, data=semdataCtl5.IPV4, estimator="MLR", missing="fiml")
-summary(MOdel1Fit_2, fit.measure=T, standardized=T, rsquare=T)
+summary(Model1Fit_2, fit.measure=T, standardized=T, rsquare=T)
 #residuals(Model1Fit_2, type='cor')
 ```
