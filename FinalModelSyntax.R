@@ -80,7 +80,7 @@ PlayW3.d ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + Edu
 Model3Fit_2<-sem(Model3_2, data=semdataCtl5.IPV4, estimator="MLR", missing="fiml")
 summary(MOdel3Fit_2, fit.measure=T, standardized=T, rsquare=T)
 anova(Model1Fit_2, Model3Fit_2)
-#residuals(Model1Fit, type='cor')
+#residuals(Model3Fit_2, type='cor')
 
 mod_ind<-modificationindices(Model3Fit_2)
 head(mod_ind[order(mod_ind$mi, decreasing = TRUE),],15) 
