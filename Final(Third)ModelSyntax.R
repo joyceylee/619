@@ -1,5 +1,5 @@
 ```{r}
-#Final model for 619 project 
+#Final (also third) model (coparenting model) for 619 project 
 
 load("H:\\BSF Processing Data\\Datasets\\Dataset for R\\Data Processing\\semdataCtl\\Everything4.RData")
 
@@ -78,7 +78,7 @@ PlayW3.d ~ BlackOnly + HispanicCombo + OtherCombo + Work + BSF + HSDiploma + Edu
 '
 
 Model3Fit_2<-sem(Model3_2, data=semdataCtl5.IPV4, estimator="MLR", missing="fiml")
-summary(MOdel3Fit_2, fit.measure=T, standardized=T, rsquare=T)
+summary(Model3Fit_2, fit.measure=T, standardized=T, rsquare=T)
 anova(Model1Fit_2, Model3Fit_2)
 #residuals(Model3Fit_2, type='cor')
 
