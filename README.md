@@ -1,4 +1,4 @@
-# 619 project synatx 
+# 619 project syntax
 
 Here, I'll be posting my 619 project syntax model by model. Broadly, my 619 project examined the longitudinal
 and reciprocal relations between coparenting relationship quality and father engagement among low-income residential fathers. I
